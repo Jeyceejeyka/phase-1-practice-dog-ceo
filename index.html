@@ -2,8 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Intro to AJAX Practice Tasks</title>
-    <script src="src/index.js" charset="utf-8"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog CEO</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to the modern CSS -->
+    <script src="src/index.js" defer charset="utf-8"></script> <!-- Ensures JS runs after HTML loads -->
   </head>
   <body>
     <h1>Dog CEO</h1>
@@ -15,6 +17,7 @@
     <hr>
     <label for="select-breed">Filter Breeds That Start with:</label>
     <select id="breed-dropdown" name="select-breed">
+      <option value="">Select a letter</option> <!-- Added default option -->
       <option value="a">a</option>
       <option value="b">b</option>
       <option value="c">c</option>
@@ -22,7 +25,7 @@
     </select>
 
     <ul id="dog-breeds">
-
+      <!-- breed list items here -->
     </ul>
 
   </body>
